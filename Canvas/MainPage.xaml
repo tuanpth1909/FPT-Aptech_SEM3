@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Canvas.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Canvas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas>
+            <Rectangle Fill="BLue"
+                       Width="220"
+                       Height="220" Canvas.Left="522" Canvas.Top="44">
+            </Rectangle>
+            <Ellipse Fill="Red"
+                      Width="175"
+                       Height="175" Canvas.Left="545" Canvas.Top="67"
+                     Canvas.ZIndex="100">
+            </Ellipse>
+            <Polygon Fill="Green"
+                     Points="0,0 275,0 275, 200" Canvas.Left="499" Canvas.Top="47">
+            </Polygon>
+        </Canvas>
+        <StackPanel Margin="100"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+            <Rectangle Fill="BLue"
+                       Width="220"
+                       Height="220"/>
+            <Ellipse Fill="Red"
+                      Width="175"
+                       Height="175"
+                     Canvas.ZIndex="100"/>
+            <Polygon Fill="Green"
+                     Points="0,0 275,0 275,200"/>
+        </StackPanel>
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Fill="Blue" Width="220" Height="220"
+                       Grid.Row="0" Grid.Column="0"/>
+            <Ellipse Fill="Red" Width="175" Height="175"
+                     Grid.Row="1" Grid.Column="0"/>
+            <Polygon Fill="Green" Points="0,0 275,0 275,200"
+                     StrokeThickness="2" Grid.Row="1" Grid.Column="2"/>
+        </Grid>
+        <Button>
+            <TextBlock>Hi</TextBlock>
+        </Button>
+    </Grid>
+</Page>
