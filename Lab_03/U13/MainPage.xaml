@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="U13.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U13"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel Margin="10,20,0,0">
+            <TextBlock Text="Lorem Ipsum" FontSize="48" Margin="0,0,0,20" FocusVisualPrimaryBrush="Red" Foreground="#FFB60B0B" />
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="0,0,20,0">
+                    <Rectangle Fill="Blue" Width="200" Height="200" VerticalAlignment="Top"/>
+                    <StackPanel>
+                        <Rectangle Fill="Red" Width="100" Height="100"/>
+                        <Rectangle Fill="Yellow" Width="100" Height="100"/>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Width="250" TextWrapping="Wrap" Margin="0,0,20,0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vestibulum sit amet neque nec eros interdum laoreet nec \
+                </TextBlock>
+                <TextBlock Width="500" TextWrapping="Wrap"  Margin="0,0,20,0">
+                    Vestibulum varius bibendum metus. Aliquam erat volutpat.
+                    Praesent volutpat odio sed ante posuere lacinia. Suspendi
+                    Nunc a vehicula velit. Vivamus rutrum elementum massa in
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
