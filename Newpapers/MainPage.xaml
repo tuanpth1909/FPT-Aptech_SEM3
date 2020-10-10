@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="Newpapers.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Newpapers"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+    <Grid Margin="20,10,20,10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock FontSize="48" Text="Apple học mô hình cửa hàng tiện lợi" Grid.Row="0" Grid.Column="0"/>
+            <Image Grid.Row="1"
+                   Grid.Column="0"
+                   Source="Assets/a1-4910-1602296045.jpg"
+                   Width="250"
+                   Height="250"
+                   Stretch="UniformToFill"
+                   Margin="20,10,0,10"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap">
+                Theo Bloomberg, thay đổi trong cách xử lý đơn đặt hàng trực tuyến được Apple thử nghiệm từ tháng 6 hoặc tháng 7. Gần đây, hãng mở rộng ra mạng lưới gần 300 cửa hàng bán lẻ tại Mỹ và Canada. Trước đây, iPhone, Mac, iPad và phụ kiện thường được vận chuyển từ kho hàng đến tay khách đặt trực tuyến. Tuy nhiên, dưới ảnh hưởng của Covid-19, Apple Store ngoài bán trực tiếp cho khách đến mua sẽ kiêm luôn cả nhiệm vụ trên.
+            </TextBlock>
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/a1-4910-1602296045.jpg"
+                   Height="250"
+                   Width="250"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   />
+            <TextBlock Grid.Row="0" Grid.Column="1">
+                Theo Bloomberg, thay đổi trong cách xử lý đơn đặt hàng trực tuyến được 
+                Apple thử nghiệm từ tháng 6 hoặc tháng 7. Gần đây, hãng mở rộng ra mạng
+                lưới gần 300 cửa hàng bán lẻ tại Mỹ và Canada. Trước đây, iPhone, Mac, iPad và phụ kiện thường được vận chuyển từ kho hàng đến tay khách đặt trực tuyến. Tuy nhiên, dưới ảnh hưởng của Covid-19, Apple Store ngoài bán trực tiếp cho khách đến mua sẽ kiêm luôn cả nhiệm vụ trên.
+            </TextBlock>
+        </Grid>
+    </StackPanel>
+</Page>
