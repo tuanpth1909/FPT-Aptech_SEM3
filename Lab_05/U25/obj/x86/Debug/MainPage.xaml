@@ -1,0 +1,128 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="U25.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U25"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Text="TimePicker" VerticalAlignment="Center"/>
+        <TimePicker Grid.Row="0"
+                    Grid.Column="1"
+                    ClockIdentifier="12HourClock"
+                    Margin="20,20,0,20"/>
+        <TextBlock Grid.Row="1" Text="CalendarPicker" VerticalAlignment="Center"/>
+        <CalendarDatePicker Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="20,20,0,20"
+                            PlaceholderText="Choose a date"/>
+        <TextBlock Grid.Row="2" Text="CalendarView" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="20,0,0,20"
+                    VerticalAlignment="Center">
+            <CalendarView x:ConnectionId='9' Name="MyCalendarView"
+                          SelectionMode="Multiple"
+                                                                                    />
+            <TextBlock x:ConnectionId='10' Name="CalendarViewResultTextBlock"/>
+        </StackPanel>
+        <TextBlock Grid.Row="3" Text="Flyout" VerticalAlignment="Center"/>
+        <Button x:ConnectionId='2' Name="MyFloutButton"
+                Margin="20,0,0,20"
+                Grid.Row="3"
+                Grid.Column="1"
+                Content="Flyout">
+        <Button.Flyout>
+            <Flyout x:ConnectionId='7' x:Name="MyFlyout">
+                <StackPanel Margin="20,20,20,20">
+                    <TextBlock Text="I just flew uot to say I love you."
+                               Margin="0,0,0,10"/>
+                    <Button x:ConnectionId='8' Name="InnerFlyoutButton"
+                            HorizontalAlignment="Right"
+                            Content="OK"
+                                                           />
+                </StackPanel>
+            </Flyout>
+        </Button.Flyout>
+        </Button>
+        <TextBlock Grid.Row="4" Text="FlyoutMenu" VerticalAlignment="Center"/>
+        <Button Grid.Row="4"
+                Margin="20,0,0,20"
+                Grid.Column="1"
+                Content="FlyoutMenu">
+            <Button.Flyout>
+                <MenuFlyout Placement="Bottom">
+                    <MenuFlyoutItem Text="item1"/>
+                    <MenuFlyoutItem Text="item1"/>
+                    <MenuFlyoutSeparator/>
+                    <MenuFlyoutSubItem Text="Item 3">
+                        <MenuFlyoutItem Text="Item 4"/>
+                        <MenuFlyoutSubItem Text="Item 5">
+                            <MenuFlyoutItem Text="Item 6"/>
+                            <MenuFlyoutItem Text="Item 7"/>
+                        </MenuFlyoutSubItem>
+                    </MenuFlyoutSubItem>
+                    <MenuFlyoutSeparator/>
+                    <ToggleMenuFlyoutItem Text="Item 8"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+        <TextBlock Grid.Row="5" Text="AutosuggestBox" VerticalAlignment="Center"/>
+        <AutoSuggestBox x:ConnectionId='3' Name="MyAutoSuggestbBox"
+                        Margin="20,0,0,20"
+                        Grid.Row="5"
+                        Grid.Column="1"
+                        HorizontalAlignment="Left"
+                        QueryIcon="Find"
+                        PlaceholderText="Find Something"
+                        Width="200"
+                                                                  />
+        <TextBlock Text="Slider" Grid.Row="6" VerticalAlignment="Center"/>
+        <Slider x:ConnectionId='4' Name="MySlider"
+                Margin="20,0,0,20"
+                Grid.Row="6"
+                Grid.Column="1"
+                HorizontalAlignment="Left"
+                Maximum="100"
+                Minimum="0"
+                Width="200"/>
+        <TextBlock Grid.Row="7" Text="ProgressBar" VerticalAlignment="Center"/>
+        <ProgressBar x:ConnectionId='5' Name="MyProgressBar"
+                     Margin="20,0,0,20"
+                     Grid.Row="7"
+                     Grid.Column="1"
+                     HorizontalAlignment="Left"
+                     Width="200"
+                     Maximum="100"
+                                                                 />
+        <TextBlock Grid.Row="8" Text="Progress Ring" VerticalAlignment="Center"/>
+        <ProgressRing x:ConnectionId='6' Name="MyProgressRing"
+                      Margin="20,0,0,20"
+                      Grid.Row="8"
+                      Grid.Column="1"
+                      HorizontalAlignment="Left"
+                      Width="50"
+                      Height="50"
+                      IsActive="True"/>
+    </Grid>
+</Page>
+
