@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="ListBook.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ListBook"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:ListBook.Models"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource AppBarBackgroundThemeBrush}" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <!--Tao GridView de hien thi sach-->
+        <GridView ItemsSource="{x:Bind Books}"
+                  IsItemClickEnabled="True"
+                  ItemClick="GridView_ItemClick"
+                  SelectionChanged="GridView_SelectionChanged">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:Book">
+                    <StackPanel HorizontalAlignment="Center">
+                        <Image Width="150" Source="{x:Bind ConverImage}"/>
+                        <TextBlock FontSize="16" Text="{x:Bind Title}" HorizontalAlignment="Center"/>
+                        <TextBlock FontSize="10" Text="{x:Bind Author}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+        <TextBlock Grid.Row="1"
+                   Name="ResultTextBlock"
+                   FontSize="24"
+                   Foreground="Red"
+                   FontWeight="Bold"
+                   Margin="0,20,0,0"/>
+    </Grid>
+</Page>

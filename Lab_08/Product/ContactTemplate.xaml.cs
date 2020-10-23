@@ -19,7 +19,13 @@ namespace Product
 {
     public sealed partial class ContactTemplate : UserControl
     {
-        public Models.Contact Contact { get { return this.DataContext as Models.Contact; } }
+        public Models.Contact Contact
+        {
+            get
+            {
+                return this.DataContext as Models.Contact;
+            }
+        }
         public ContactTemplate()
         {
             this.InitializeComponent();

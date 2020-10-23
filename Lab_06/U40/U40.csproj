@@ -122,6 +122,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Book.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +131,15 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1.jpg" />
+    <Content Include="Assets\2.jpg" />
+    <Content Include="Assets\3.jpg" />
+    <Content Include="Assets\4.jpg" />
+    <Content Include="Assets\5.jpg" />
+    <Content Include="Assets\6.jpg" />
+    <Content Include="Assets\7.jpg" />
+    <Content Include="Assets\8.jpg" />
+    <Content Include="Assets\9.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -154,6 +164,7 @@
       <Version>6.2.10</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

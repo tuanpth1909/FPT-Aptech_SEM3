@@ -5,6 +5,7 @@
     xmlns:local="using:U40"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:U40.Models" 
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -14,6 +15,23 @@
             <RowDefinition Height="100"/>
         </Grid.RowDefinitions>
 
+        <GridView ItemsSource="{x:Bind Books}"
+                  IsItemClickEnabled="True" 
+                  ItemClick="GridView_ItemClick"
+                  SelectionChanged="GridView_SelectionChanged">
+            <GridView.ItemTemplate>
+                <!--<Page.Resource>-->
+                    <DataTemplate x:DataType="data:Book">
+                        <StackPanel HorizontalAlignment="Center" >
+                            <Image Width="150" Source="{x:Bind CoverImage}"/>
+                                <TextBlock FontSize="16" Text="{x:Bind Title}" HorizontalAlignment="Center"/>
+                                <TextBlock FontSize="10" Text="{x:Bind Author}" HorizontalAlignment="Center"/>
+                         </StackPanel>
+                    </DataTemplate>
+                    <!--</Page.Resource>-->
+            </GridView.ItemTemplate>
+        </GridView>
+        
         <TextBlock Grid.Row="1"
                    Name="ResultTextBlock"
                    FontSize="24"

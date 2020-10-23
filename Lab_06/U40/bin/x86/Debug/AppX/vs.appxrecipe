@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>MAYTINH</Machine>
+    <WindowsUser>MyPC</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>10fbf6e2-23fb-4c07-b659-1a84a3486e76</PackageIdentityName>
+    <PackageIdentityPublisher>CN=MyPC</PackageIdentityPublisher>
+    <IntermediateOutputPath>E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>FFA2271184274B9B9F7976F8BB4018E06E56836412D0F628F59414D87040D5BE</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>10fbf6e2-23fb-4c07-b659-1a84a3486e76_1.0.0.0_x86__eqp4gwxcrckt0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>10fbf6e2-23fb-4c07-b659-1a84a3486e76_eqp4gwxcrckt0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>10fbf6e2-23fb-4c07-b659-1a84a3486e76</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=MyPC</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-22T02:22:52.245</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\U40.exe">
+      <PackagePath>entrypoint\U40.exe</PackagePath>
+      <Modified>2020-10-22T02:22:51.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2020-02-27T12:16:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
+      <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
+      <Modified>2019-03-18T11:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\1.jpg">
+      <PackagePath>Assets\1.jpg</PackagePath>
+      <Modified>2020-10-21T15:41:37.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\2.jpg">
+      <PackagePath>Assets\2.jpg</PackagePath>
+      <Modified>2020-10-21T15:41:52.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\3.jpg">
+      <PackagePath>Assets\3.jpg</PackagePath>
+      <Modified>2020-10-21T15:42:10.196</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\4.jpg">
+      <PackagePath>Assets\4.jpg</PackagePath>
+      <Modified>2020-10-21T15:42:17.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\5.jpg">
+      <PackagePath>Assets\5.jpg</PackagePath>
+      <Modified>2020-10-21T15:42:27.533</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\6.jpg">
+      <PackagePath>Assets\6.jpg</PackagePath>
+      <Modified>2020-10-21T15:42:35.427</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\7.jpg">
+      <PackagePath>Assets\7.jpg</PackagePath>
+      <Modified>2020-10-21T15:42:43.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\8.jpg">
+      <PackagePath>Assets\8.jpg</PackagePath>
+      <Modified>2020-10-21T15:43:01.558</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\9.jpg">
+      <PackagePath>Assets\9.jpg</PackagePath>
+      <Modified>2020-10-21T15:43:11.539</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2020-10-17T15:37:40.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2020-10-01T02:32:07.566</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.572</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.575</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.577</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.578</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2020-10-01T02:32:07.582</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\U40.xr.xml">
+      <PackagePath>U40.xr.xml</PackagePath>
+      <Modified>2020-10-22T02:22:17.070</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2020-10-22T02:22:51.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2020-10-22T02:22:51.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2019-03-18T10:33:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2020-10-22T01:59:36.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\Core\U40.exe">
+      <PackagePath>U40.exe</PackagePath>
+      <Modified>2020-10-22T02:22:52.219</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27902.3</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.28529.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.28529.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.10\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM64\Microsoft.VCLibs.ARM64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00.Debug</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
