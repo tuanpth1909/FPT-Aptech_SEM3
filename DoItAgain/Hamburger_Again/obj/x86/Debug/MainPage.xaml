@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="Hamburger_Again.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger_Again"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <RelativePanel>
+            <Button x:ConnectionId='7' Name="Hambuger"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36"
+                    Content="&#xE700;"
+                                                 />
+
+            <Button x:ConnectionId='8' Name="BackButton"
+                    RelativePanel.RightOf="Hambuger"
+                    FontSize="36"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xF0D5;"
+                                            />
+
+            <TextBlock x:ConnectionId='9' Name="TitleTextBlock"
+                       RelativePanel.RightOf="BackButton"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Margin="20,5,0,0"/>
+
+            <TextBox x:ConnectionId='10' Name="SearchTextBox"
+                     RelativePanel.LeftOf="SearchButton"
+                     PlaceholderText="Search"
+                     Height="48"
+                     Width="200"
+                     FontSize="24"/>
+
+            <Button x:ConnectionId='11' Name="SearchButton"
+                    RelativePanel.AlignRightWithPanel="True"
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="36"
+                    Content="&#xE1A3;"/>
+        </RelativePanel>
+
+        <SplitView x:ConnectionId='2' Grid.Row="1"
+                   Name="MySplitView"
+                   DisplayMode="CompactOverlay"
+                   OpenPaneLength="200"
+                   CompactPaneLength="56">
+            <SplitView.Pane>
+                <ListBox x:ConnectionId='3' SelectionMode="Single"
+                                                                    >
+                    <ListBoxItem x:ConnectionId='4' Name="Financial">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;"/>
+                            <TextBlock FontSize="24" Margin="20,0,0,0" Text="Financial"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem x:ConnectionId='5' Name="Food">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;"/>
+                            <TextBlock FontSize="24" Margin="20,0,0,0" Text="Food"/>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Frame x:ConnectionId='6' Name="MyFrame"></Frame>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>
+

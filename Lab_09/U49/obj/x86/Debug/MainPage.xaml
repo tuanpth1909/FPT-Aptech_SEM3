@@ -67,6 +67,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </SplitView.Pane>
+            
             <SplitView.Content>
                 <Grid Margin="20, 20, 0, 0">
                     <Grid.RowDefinitions>
@@ -96,6 +97,7 @@
                 </Grid>
             </SplitView.Content>
         </SplitView>
+        
     </Grid>
 </Page>
 

@@ -17,7 +17,8 @@
 
         <GridView x:ConnectionId='2'                             
                   IsItemClickEnabled="True" 
-                                                                                             >
+                                                
+                                                              >
             <GridView.ItemTemplate>
                 <!--<Page.Resource>-->
                     <DataTemplate                       >

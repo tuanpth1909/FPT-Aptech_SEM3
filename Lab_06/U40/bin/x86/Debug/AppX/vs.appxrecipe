@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-22T02:22:52.245</Modified>
+      <Modified>2020-10-24T02:36:08.822</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\U40.exe">
       <PackagePath>entrypoint\U40.exe</PackagePath>
-      <Modified>2020-10-22T02:22:51.506</Modified>
+      <Modified>2020-10-24T02:36:08.086</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -126,11 +126,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-22T02:22:51.212</Modified>
+      <Modified>2020-10-24T02:36:07.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-22T02:22:51.212</Modified>
+      <Modified>2020-10-24T02:36:07.850</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -142,7 +142,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Lab_06\U40\bin\x86\Debug\Core\U40.exe">
       <PackagePath>U40.exe</PackagePath>
-      <Modified>2020-10-22T02:22:52.219</Modified>
+      <Modified>2020-10-24T02:36:08.800</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
