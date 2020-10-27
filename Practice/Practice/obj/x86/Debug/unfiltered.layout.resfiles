@@ -1,4 +1,6 @@
 WinMetadata\Windows.winmd
+Assets\appleWatch.jpg
+Assets\iphone12.jpg
 Assets\LockScreenLogo.scale-200.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
@@ -9,4 +11,5 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 MainPage.xbf
 Practice.xr.xml
+ProductTemplate.xbf
 Properties\Default.rd.xml

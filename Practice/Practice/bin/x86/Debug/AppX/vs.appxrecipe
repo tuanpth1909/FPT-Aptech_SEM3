@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-10-27T01:33:31.553</Modified>
+      <Modified>2020-10-27T02:13:27.345</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\Practice.exe">
       <PackagePath>entrypoint\Practice.exe</PackagePath>
-      <Modified>2020-10-27T01:33:30.267</Modified>
+      <Modified>2020-10-27T02:13:25.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -45,6 +45,14 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T11:36:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Assets\appleWatch.jpg">
+      <PackagePath>Assets\appleWatch.jpg</PackagePath>
+      <Modified>2020-10-27T01:43:09.347</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Assets\iphone12.jpg">
+      <PackagePath>Assets\iphone12.jpg</PackagePath>
+      <Modified>2020-10-27T01:42:21.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -86,15 +94,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\Practice.xr.xml">
       <PackagePath>Practice.xr.xml</PackagePath>
-      <Modified>2020-10-27T01:33:29.780</Modified>
+      <Modified>2020-10-27T02:13:24.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-10-27T01:33:29.809</Modified>
+      <Modified>2020-10-27T02:13:25.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-10-27T01:33:29.809</Modified>
+      <Modified>2020-10-27T02:13:25.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\ProductTemplate.xbf">
+      <PackagePath>ProductTemplate.xbf</PackagePath>
+      <Modified>2020-10-27T02:13:25.004</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -102,11 +114,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-10-27T01:22:02.612</Modified>
+      <Modified>2020-10-27T02:13:26.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\Core\Practice.exe">
       <PackagePath>Practice.exe</PackagePath>
-      <Modified>2020-10-27T01:33:31.508</Modified>
+      <Modified>2020-10-27T02:13:27.287</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

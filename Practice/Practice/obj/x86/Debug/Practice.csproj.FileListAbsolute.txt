@@ -47,3 +47,4 @@ E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\obj\x86\Debug\ProductTem
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\obj\x86\Debug\ProductTemplate.g.cs
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\obj\x86\Debug\ProductTemplate.xaml
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\obj\x86\Debug\ProductTemplate.xbf
+E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\ProductTemplate.xbf

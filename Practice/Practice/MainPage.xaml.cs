@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practice.Models;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
@@ -24,16 +25,16 @@ namespace Practice
     public sealed partial class MainPage : Page
     {
 
-        private List<Image> Images;
+        private List<Models.Image> Images;
         private ObservableCollection<Product> Products;
 
         public MainPage()
         {
             this.InitializeComponent();
 
-            Images = new List<Image>();
-            Images.Add(new Image { ImagePath = "Assets/iphone12.jpg" });
-            Images.Add(new Image { ImagePath = "Assets/appleWatch.jpg" });
+            Images = new List<Models.Image>();
+            Images.Add(new Models.Image { ProductPath = "Assets/iphone12.jpg" });
+            Images.Add(new Models.Image { ProductPath = "Assets/appleWatch.jpg" });
 
             Products = new ObservableCollection<Product>();
             Products.Add(new Product { ProductName = "Iphone 12", Description = "abcd", Image = "Assets/iphone12.jpg" });
@@ -41,7 +42,7 @@ namespace Practice
 
         private void NewProductButton_Click(object sender, RoutedEventArgs e)
         {
-            string image = ((Image)ImageComboBox.SelectedValue).ImagePath;
+            string image = ((Models.Image)ImageComboBox.SelectedValue).ProductPath;
             Products.Add(new Product
             {
                 ProductName = ProductTextBox.Text,

@@ -34,6 +34,12 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Assets\appleWatch.jpg">
+      <PackagePath>Assets\appleWatch.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Assets\iphone12.jpg">
+      <PackagePath>Assets\iphone12.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
@@ -72,6 +78,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Practice\Practice\bin\x86\Debug\ProductTemplate.xbf">
+      <PackagePath>ProductTemplate.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
