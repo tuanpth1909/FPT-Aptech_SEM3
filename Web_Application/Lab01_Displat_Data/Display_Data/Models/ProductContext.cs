@@ -8,7 +8,7 @@ namespace Display_Data.Models
 {
     public class ProductContext : DbContext
     {
-        public ProductContext() : base("Display_Data")
+        public ProductContext() : base("Displays")
         { 
         }
         public DbSet<Category> Categories { get; set; }

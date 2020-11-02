@@ -96,8 +96,8 @@ E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\bin\Microsoft.Owin.Security.OAuth.xml
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.csprojAssemblyReference.cache
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.csproj.CoreCompileInputs.cache
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.csproj.CopyComplete
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.dll
 E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.pdb
+E:\FPT Aptech _ SEM 3\FPT-Aptech_SEM3\Web_Application\Lab01_Displat_Data\Display_Data\obj\Debug\Display_Data.csprojAssemblyReference.cache
