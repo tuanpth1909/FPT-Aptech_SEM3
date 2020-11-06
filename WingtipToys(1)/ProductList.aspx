@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Products" Language="C#" MasterPageFile="~/Site.Master"
     AutoEventWireup="true" CodeBehind="ProductList.aspx.cs" Inherits="WingtipToys_1_.ProductList" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <section>
         <div>
@@ -31,7 +32,7 @@
                             <tr>
                                 <td>
                                     <a href="ProductDetails.aspx?productID=<%#:Item.ProductID %>">
-                                        <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>" width="100" height="75" style="border:solid" />
+                                        <img src="/Catalog/Images/Thumbs/<%#:Item.ImagePath%>" width="100" height="75" style="border: solid" />
                                     </a>
                                 </td>
                             </tr>
@@ -61,12 +62,12 @@
                     </td>
                 </ItemTemplate>
                 <LayoutTemplate>
-                    <table style="width:100%;">
+                    <table style="width: 100%;">
                         <tbody>
                             <tr>
                                 <td>
                                     <table id="groupPlaceholderContainer" runat="server"
-                                        style="width:100%;">
+                                        style="width: 100%;">
                                         <tr id="groupPlaceholder"></tr>
                                     </table>
                                 </td>
