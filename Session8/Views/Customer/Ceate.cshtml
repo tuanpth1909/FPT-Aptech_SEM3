@@ -1,0 +1,56 @@
+﻿@model Session8.Models.CustomerModel
+
+@{
+    ViewData["Title"] = "Ceate";
+}
+
+<h1>Ceate</h1>
+
+<h4>CustomerModel</h4>
+<hr />
+<script type="text/javascript">
+    function validateForm() {
+        var isValidForm = true;
+        var nameValue = document.getElementById("Name").value;
+        var emailValue = document.getElementById("Emailid").value;
+
+        if (nameValue == null || nameValue == "") {
+            document.getElementById("validateName")
+                .textContent = "Customer Name is requied";
+            isValidForm = false;
+        }
+
+        if (emailValue == null || emailValue == "") {
+            document.getElementById("validationEmail")
+                .textContent = "Customer Email is requied";
+            isValidForm = false;
+        }
+        return isValidForm;
+    }
+
+</script>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Ceate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailId" class="control-label"></label>
+                <input asp-for="EmailId" class="form-control" />
+                <span asp-validation-for="EmailId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
