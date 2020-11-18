@@ -1,0 +1,17 @@
+﻿@model HelloWorldMVC.Models.AppMessage
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>@Model.Message</h1>
+    <hr />
+    <h2>@ViewBag.Message</h2>
+    <form asp-action="Index" asp-controller="Home" method="post">
+        <br /><br />
+        <input type="text" asp-for="Message" />
+        <br /><br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
