@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="navbar-fixed-top nav-tabs-justified">
+        @{
+            Html.RenderAction("messagepage", "Home");
+        }
+    </div>
+
+    <h1>Welcome to Learning Institute!</h1>
