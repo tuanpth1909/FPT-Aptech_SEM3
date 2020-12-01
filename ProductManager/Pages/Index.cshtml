@@ -10,8 +10,14 @@
 </div>
 
 
-@foreach(var product in Model.Products)
+@foreach (var product in Model.Products)
 {
-    <h2>@product.Name</h2>
-    <span>@product.Price</span>
+    <div class="card">
+        <div class="card-img" style="background-image: url('@product.Image');">
+        </div>
+        <div class="card-body">
+            <p class="card-text">@product.Name</p>
+            <span>@product.Price</span>
+        </div>
+    </div>
 }
