@@ -13,7 +13,8 @@
 @foreach (var product in Model.Products)
 {
     <div class="card">
-        <div class="card-img" style="background-image: url('@product.Image');">
+        <div class="card-img">
+            <img src="@product.Image" alt="Alternate Text" />
         </div>
         <div class="card-body">
             <p class="card-text">@product.Name</p>
