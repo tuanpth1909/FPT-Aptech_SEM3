@@ -6,29 +6,18 @@ namespace RazorPagesMovie.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AlterColumn<string>(
-                name: "Title",
+            migrationBuilder.AlterColumn<decimal>(
+                name: "Price",
                 table: "Movie",
-                maxLength: 60,
+                type: "decimal(18, 2)",
                 nullable: false,
-                oldClrType: typeof(string),
-                oldNullable: true);
+                oldClrType: typeof(decimal),
+                oldType: "decimal(18,2)");
 
-            migrationBuilder.AlterColumn<string>(
+            migrationBuilder.AddColumn<string>(
                 name: "Rating",
                 table: "Movie",
-                maxLength: 5,
-                nullable: false,
-                oldClrType: typeof(string),
-                oldNullable: true);
-
-            migrationBuilder.AlterColumn<string>(
-                name: "Genre",
-                table: "Movie",
-                maxLength: 30,
-                nullable: false,
-                oldClrType: typeof(string),
-                oldNullable: true);
+                nullable: true);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
