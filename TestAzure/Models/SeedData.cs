@@ -53,7 +53,6 @@ namespace TestAzure.Models
                         Price = 34.95m
 
                     },
-
                     new Product
                     {
                         Name = "Stadium",
@@ -62,7 +61,6 @@ namespace TestAzure.Models
                         Price = 79500
 
                     },
-
                     new Product
                     {
                         Name = "Thinking Cap",

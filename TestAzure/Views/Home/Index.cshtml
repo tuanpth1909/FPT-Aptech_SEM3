@@ -1,11 +1,23 @@
 ﻿<h1>Welcome MVC ASP.NET Core</h1>
 @*Sử dụng model để lấy dữ liệu truyền cho view*@
-@model IQueryable<Product>
-@foreach(var p in Model)
+@*@model IQueryable<Product>
+    @foreach (var p in Model)
+    {
+        <div>
+            <h3>@p.Name</h3>
+            @p.Description
+            <h4> @p.Price.ToString("c")</h4>
+        </div>
+    }*@
+
+@model ProductsListViewModel
+
+@foreach (var p in Model.Products)
 {
     <div>
         <h3>@p.Name</h3>
         @p.Description
-    <h4> @p.Price.ToString("c")</h4>
+        <h4> @p.Price.ToString("c")</h4>
     </div>
-} 
+}
+<div page-model="@Model.PagingInfo" page-action="Index" class="text-center"></div>

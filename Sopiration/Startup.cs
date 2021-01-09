@@ -1,18 +1,17 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;//Sử dụng các phần mở rộng cho phần Configuration
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Sopiration.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TestAzure.Models;
-using TestAzure.Models.DbContexts;
 
-namespace TestAzure
+namespace Sopiration
 {
     public class Startup
     {
@@ -21,19 +20,17 @@ namespace TestAzure
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; set; }
+        public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //Đăng ký dịch vụ cho DbContext
-            services.AddDbContext<TAzureDbContext>(opts =>
-
+            services.AddDbContext<SopirationContext>(opts =>
             {
-            opts.UseSqlServer(Configuration["ConnectionStrings:TestAzureConnection"]);
+                opts.UseSqlServer(Configuration["ConnectionStrings:SopirationConnection"]);
             });
-            services.AddScoped<TAzureRepository, EFTAzureRepository>();
+            //services.AddScoped<SopirationRepository, EFSopirationRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,23 +47,18 @@ namespace TestAzure
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            //Thông báo mã lỗi trên trang
-            app.UseStatusCodePages();
-            //Sử dụng các file tĩnh
             app.UseStaticFiles();
-
+            app.UseStatusCodePages();
             app.UseRouting();
 
             app.UseAuthorization();
 
-            //Quy định MẶC ĐỊNH Route
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-
             SeedData.EnsurePopulated(app);
         }
     }

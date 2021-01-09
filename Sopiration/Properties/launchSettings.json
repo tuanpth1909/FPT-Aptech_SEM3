@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:2002",
+      "applicationUrl": "http://localhost:2003",
       "sslPort": 0
     }
   },
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "ContosoUniversity": {
+    "Sopiration": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
