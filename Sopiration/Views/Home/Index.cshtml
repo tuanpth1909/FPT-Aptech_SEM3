@@ -6,3 +6,16 @@
     <h1 class="display-4">Chào mừng bạn đẫ đến với Sopiration</h1>
     <p>Sopiration <a href="https://docs.microsoft.com/aspnet/core">Giá trị tiên phong - Lợi ích theo đuổi</a>.</p>
 </div>
+@model IQueryable<Book>
+@foreach (var p in Model)
+{
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="@p.Image" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">@p.Name</h5>
+        <p class="card-text">@p.Description</p>
+        <a href="#" class="btn btn-primary">@p.Price</a>
+    </div>
+</div>
+}
+

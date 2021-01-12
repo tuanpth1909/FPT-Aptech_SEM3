@@ -9,7 +9,7 @@ using Sopiration.Models;
 namespace Sopiration.Migrations
 {
     [DbContext(typeof(SopirationContext))]
-    [Migration("20210108164511_Initial")]
+    [Migration("20210110141925_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,6 +31,9 @@ namespace Sopiration.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")

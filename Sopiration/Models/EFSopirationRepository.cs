@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Sopiration.Models
 {
-    public class EFSopirationRepository
+    public class EFSopirationRepository : SopirationRepository
     {
         private SopirationContext context; //Khởi tạo biến Db
 

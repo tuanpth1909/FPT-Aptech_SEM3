@@ -11,7 +11,14 @@ namespace Sopiration.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index() => View();
+        private SopirationRepository repository;
+
+        public HomeController(SopirationRepository repo)
+        {
+            repository = repo;
+        }
+
+        public IActionResult Index() => View(repository.Books);
 
         //Khởi tạo controller HomeController
 
