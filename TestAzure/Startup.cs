@@ -67,7 +67,25 @@ namespace TestAzure
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "pagination",
+                    pattern: "Product/Page{productPage}",
+                    new { Controller = "Home", action = "Index" });
+                endpoints.MapDefaultControllerRoute();
+            });
+
             SeedData.EnsurePopulated(app);
         }
     }
 }
+
+//installing the libman ToolPackage
+//dotnet tool uninstall --global Microsoft.Web.LibraryManager.Cli
+//dotnet tool install --global Microsoft.Web.LibraryManager.Cli --version 2.0.96
+
+//Initializing the Example project
+//Libman init -p cdnjs
+//Libman install twitter-bootstrap@4.3.1 -d wwwroot/lib/twitter-bootsrap
+//check folder wwwroot/lib co twitter-bootstrap
