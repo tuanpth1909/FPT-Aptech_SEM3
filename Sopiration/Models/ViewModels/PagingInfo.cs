@@ -13,6 +13,5 @@ namespace Sopiration.Models.ViewModels
 
         public int TotalPages =>
             (int)Math.Ceiling((decimal)TotalItems / ItemsPerPage);
-
     }
 }

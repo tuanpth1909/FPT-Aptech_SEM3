@@ -58,6 +58,14 @@ namespace Sopiration
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "pagiantion",
+                    pattern: "Book/Page{productPage}",
+                    new {Controller = "Home", action="Index" });
+            });
             SeedData.EnsurePopulated(app);
         }
     }
