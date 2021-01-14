@@ -12,18 +12,7 @@
                 <a href="#" class="btn btn-primary">@p.Price</a>
             </div>
         </div>*@
-    <div class="card card-outline-primary m-1 p-1">
-        <div class="bg-faded p-1">
-            <h4>
-                @p.Name
-                <span class="badge badge-pill badge-primary" style="float:right">
-                    <small>@p.Price.ToString("c")</small>
-                </span>
-            </h4>
-        </div>
-    </div>
-    <div class="card-img"><img src="@p.Image" alt="Alternate Text" /></div>
-    <div class="card-text p-1">@p.Description</div>
+   <partial name="BookSummary" model="p" />
 }
 
 <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"

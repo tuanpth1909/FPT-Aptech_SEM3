@@ -62,19 +62,57 @@ namespace TestAzure
             //Quy định MẶC ĐỊNH Route
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+                //Test URL: ...
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{controller=Home}/{action=Index}/{id?}");
 
-            app.UseEndpoints(endpoints =>
-            {
                 endpoints.MapControllerRoute(
                     name: "pagination",
                     pattern: "Product/Page{productPage}",
+                    new { Controller = "Home", action = "Index", productPage = 1 });
+
+                //endpoints.MapControllerRoute("catpage",
+                //    "{category}/Page{productPage:int}",
+                //    new { Controller = "Home", action = "Index"});
+
+                //endpoints.MapControllerRoute("page",
+                //    "Page{productPage:int}",
+                //    new { Controller = "Home", action = "Index", productPage = 1 });
+
+                //endpoints.MapControllerRoute("category",
+                //   "{category}",
+                //   new { Controller = "Home", action = "Index", productPage = 1 });
+
+                endpoints.MapControllerRoute("catpage",
+                    "{category}/Page{productPage:int}",
                     new { Controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("page",
+                    "Page{productPage:int}",
+                 new { Controller = "Home", action = "Index", productPage = 1 });
+
+                endpoints.MapControllerRoute("category", "{category}",
+                 new { Controller = "Home", action = "Index", productPage = 1 });
+
+                endpoints.MapControllerRoute("catepage",
+                    "Product/{category}/Page{productPage:int}",
+                    new { Controller = "Home", action = "Index" });
+
                 endpoints.MapDefaultControllerRoute();
+                //endpoints.MapRazorPages();
             });
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "pagination",
+            //        pattern: "Product/Page{productPage}",
+            //        new { Controller = "Home", action = "Index" });
+            //    endpoints.MapDefaultControllerRoute();
+            //});
+
+
 
             SeedData.EnsurePopulated(app);
         }
