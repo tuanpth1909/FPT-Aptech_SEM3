@@ -7,7 +7,7 @@ namespace HRM_Practice.Models
 {
     public class Employee
     {
-        public string EmployeeID { get; set; }
+        public int EmployeeID { get; set; }
         public string Name { get; set; }
         public string Gender { get; set; }
         public string PhoneNumber { get; set; }

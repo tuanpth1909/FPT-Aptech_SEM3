@@ -10,7 +10,8 @@ namespace HRM_Practice.Migrations
                 name: "Employees",
                 columns: table => new
                 {
-                    EmployeeID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    EmployeeID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),

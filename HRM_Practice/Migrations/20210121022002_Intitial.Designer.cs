@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HRM_Practice.Migrations
 {
     [DbContext(typeof(HRMDbContext))]
-    [Migration("20210121014949_Intitial")]
+    [Migration("20210121022002_Intitial")]
     partial class Intitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -22,8 +22,10 @@ namespace HRM_Practice.Migrations
 
             modelBuilder.Entity("HRM_Practice.Models.Employee", b =>
                 {
-                    b.Property<string>("EmployeeID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("EmployeeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("nvarchar(max)");

@@ -31,6 +31,7 @@ namespace HRM_Practice
             {
                 opts.UseSqlServer(Configuration["ConnectionStrings:HRMConnection"]);
             });
+            services.AddScoped<HRMRepository, EFHRMRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,14 +49,20 @@ namespace HRM_Practice
                 app.UseHsts();
             }
 
-            app.UseDeveloperExceptionPage();
-            app.UseStatusCodePages();
+            //app.UseDeveloperExceptionPage();
+            //app.UseStatusCodePages();
+
+            //app.UseHttpsRedirection();
+            //app.UseStaticFiles();
+
+            //app.UseRouting();
+
+            //app.UseAuthorization();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseStatusCodePages();
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -20,8 +20,10 @@ namespace HRM_Practice.Migrations
 
             modelBuilder.Entity("HRM_Practice.Models.Employee", b =>
                 {
-                    b.Property<string>("EmployeeID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("EmployeeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<string>("EmailAddress")
                         .HasColumnType("nvarchar(max)");
