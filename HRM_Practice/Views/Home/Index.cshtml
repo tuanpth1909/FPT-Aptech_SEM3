@@ -1,8 +1,29 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<h2>List Employee</h2>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@model IQueryable<Employee>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">NAME</th>
+            <th scope="col">GENDER</th>
+            <th scope="col">PHONE NUMBER</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col">POSITION</th>
+            <th scope="col">SALARY</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+        <tr>
+            <td>@e.Name</td>
+            <td>@e.Gender</td>
+            <td>@e.PhoneNumber</td>
+            <td>@e.EmailAddress</td>
+            <td>@e.Position</td>
+            <td>@e.Salary</td>
+        </tr>
+        }
+    </tbody>
+</table>
