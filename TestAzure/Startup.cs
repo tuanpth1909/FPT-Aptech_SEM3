@@ -34,6 +34,11 @@ namespace TestAzure
             opts.UseSqlServer(Configuration["ConnectionStrings:TestAzureConnection"]);
             });
             services.AddScoped<TAzureRepository, EFTAzureRepository>();
+
+            services.AddRazorPages();//Khi muốn tích hợp thêm RazorPages vào mô hình MVC cần thêm dòng này để định nghĩa
+
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +63,8 @@ namespace TestAzure
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSession();//Đăng ký session
 
             //Quy định MẶC ĐỊNH Route
             app.UseEndpoints(endpoints =>
@@ -100,6 +107,7 @@ namespace TestAzure
                     new { Controller = "Home", action = "Index" });
 
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();//Route để trỏ đến RazorPages mà mình tích hợp
                 //endpoints.MapRazorPages();
             });
 
